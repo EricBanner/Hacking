@@ -1,41 +1,17 @@
-level0:
-	ssh bandit0@bandit.labs.overthewire.org
-
-level1:
-	cat readme
-
-level2:
-	cat ./-
-
-level3:
-	cat spaces\ in\ this\ filename
-
-level4:
-	cat inhere/.hidden
-
-level5:
-	cat inhere/*
-
-level6:
-	==================================================================
-	http://www.binarytides.com/linux-find-command-examples/
-    b – for 512-byte blocks (this is the default if no suffix is used)
-    c – for bytes
-    w – for two-byte words
-    k – for Kilobytes (units of 1024 bytes)
-    M – for Megabytes (units of 1048576 bytes)
-    G – for Gigabytes (units of 1073741824 bytes)
-    ==================================================================
-	find ./inhere -type f -size 1033c -exec cat {} \;
-
-level7:
-	find / -type f -size 33c -user bandit7 -group bandit6 2>/dev/null -exec cat {} \;
-
-level8:
-	cat data.txt | egrep millionth
-
-level9:
-	cat data.txt | sort | uniq -u
-
-level10: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
-	strings data.txt | egrep "^=+"
+bGV2ZWwwOgoJc3NoIGJhbmRpdDBAYmFuZGl0LmxhYnMub3ZlcnRoZXdpcmUub3JnCgpsZXZlbDE6
+CgljYXQgcmVhZG1lCgpsZXZlbDI6CgljYXQgLi8tCgpsZXZlbDM6CgljYXQgc3BhY2VzXCBpblwg
+dGhpc1wgZmlsZW5hbWUKCmxldmVsNDoKCWNhdCBpbmhlcmUvLmhpZGRlbgoKbGV2ZWw1OgoJY2F0
+IGluaGVyZS8qCgpsZXZlbDY6Cgk9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCWh0dHA6Ly93d3cuYmluYXJ5dGlkZXMuY29t
+L2xpbnV4LWZpbmQtY29tbWFuZC1leGFtcGxlcy8KICAgIGIg4oCTIGZvciA1MTItYnl0ZSBibG9j
+a3MgKHRoaXMgaXMgdGhlIGRlZmF1bHQgaWYgbm8gc3VmZml4IGlzIHVzZWQpCiAgICBjIOKAkyBm
+b3IgYnl0ZXMKICAgIHcg4oCTIGZvciB0d28tYnl0ZSB3b3JkcwogICAgayDigJMgZm9yIEtpbG9i
+eXRlcyAodW5pdHMgb2YgMTAyNCBieXRlcykKICAgIE0g4oCTIGZvciBNZWdhYnl0ZXMgKHVuaXRz
+IG9mIDEwNDg1NzYgYnl0ZXMpCiAgICBHIOKAkyBmb3IgR2lnYWJ5dGVzICh1bml0cyBvZiAxMDcz
+NzQxODI0IGJ5dGVzKQogICAgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09
+PT09PT09PT09PT09PT09PT09PT09PT09PT09CglmaW5kIC4vaW5oZXJlIC10eXBlIGYgLXNpemUg
+MTAzM2MgLWV4ZWMgY2F0IHt9IFw7CgpsZXZlbDc6CglmaW5kIC8gLXR5cGUgZiAtc2l6ZSAzM2Mg
+LXVzZXIgYmFuZGl0NyAtZ3JvdXAgYmFuZGl0NiAyPi9kZXYvbnVsbCAtZXhlYyBjYXQge30gXDsK
+CmxldmVsODoKCWNhdCBkYXRhLnR4dCB8IGVncmVwIG1pbGxpb250aAoKbGV2ZWw5OgoJY2F0IGRh
+dGEudHh0IHwgc29ydCB8IHVuaXEgLXUKCmxldmVsMTA6IHRydUtMZGpzYko1Zzd5eUoyWDJSMG8z
+YTVIUUpGdUxrCglzdHJpbmdzIGRhdGEudHh0IHwgZWdyZXAgIl49KyIK
