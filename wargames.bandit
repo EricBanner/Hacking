@@ -1,0 +1,41 @@
+level0:
+	ssh bandit0@bandit.labs.overthewire.org
+
+level1:
+	cat readme
+
+level2:
+	cat ./-
+
+level3:
+	cat spaces\ in\ this\ filename
+
+level4:
+	cat inhere/.hidden
+
+level5:
+	cat inhere/*
+
+level6:
+	==================================================================
+	http://www.binarytides.com/linux-find-command-examples/
+    b – for 512-byte blocks (this is the default if no suffix is used)
+    c – for bytes
+    w – for two-byte words
+    k – for Kilobytes (units of 1024 bytes)
+    M – for Megabytes (units of 1048576 bytes)
+    G – for Gigabytes (units of 1073741824 bytes)
+    ==================================================================
+	find ./inhere -type f -size 1033c -exec cat {} \;
+
+level7:
+	find / -type f -size 33c -user bandit7 -group bandit6 2>/dev/null -exec cat {} \;
+
+level8:
+	cat data.txt | egrep millionth
+
+level9:
+	cat data.txt | sort | uniq -u
+
+level10: truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+	strings data.txt | egrep "^=+"
